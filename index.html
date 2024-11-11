@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orizon's Edu Hub</title>
+    <link rel="stylesheet" href="style.css"
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.png" alt="Lautech Logo">
+        </div>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav id="nav-menu">
+            <ul>
+                <button class="close-btn" onclick="toggleMenu()">&#x2715;</button>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="Course.html">COURSES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <!--
+                <div class="menu-auth-buttons">
+                    <a href="login.html" class="btn">LOGIN</a>
+                    <a href="signup.html" class="btn primary-btn">SIGNUP</a>
+                </div> -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h1>Welcome to Orizon's Edu Hub</h1>
+            <p>Access practice questions and summary PDFs for your courses. Enhance your learning experience and prepare for exams effectively.</p>
+            <a href="course.html" id="btn" class="btn primary-btn">Get Started</a>
+        </section>
+
+        <section class="courses-overview">
+            <h2>Avaialabe Courses</h2>
+
+            <div class="semester">
+                <h3>First Semester</h3>
+                <div class="courses-grid">
+                    <div class="course-item"><a href="mth101.html">MTH 101</a></div>
+                    <div class="course-item"><a href="phy101.html">PHY 101</a></div>
+                    <div class="course-item"><a href="chm101.html">CHM 101</a></div>
+                    <div class="course-item"><a href="bio101.html">BIO 101</a></div>
+                    <div class="course-item"><a href="faa101.html">FAA 101</a></div>
+                    <div class="course-item"><a href="cos101.html">COS 101</a></div>
+                    <div class="course-item"><a href="sta101.html">STA 101</a></div>
+                    <div class="course-item"><a href="lib101.html">LIB 101</a></div>
+                    
+                </div>
+            </div>
+
+            <div class="semester">
+                <h3>Second Semester</h3>
+                <div class="courses-grid">
+                    <div class="course-item"><a href="mth102.html">MTH 102</a></div>
+                    <div class="course-item"><a href="phy102.html">PHY 102</a></div>
+                    <div class="course-item"><a href="chm102.html">CHM 102</a></div>
+                    <div class="course-item"><a href="bio102.html">BIO 102</a></div>
+                    <div class="course-item"><a href="csc102.html">CSC 102</a></div>
+                    <div class="course-item"><a href="csc104.html">CSC 104</a></div>
+                    <div class="course-item"><a href="cos102.html">COS 102</a></div>
+                    <div class="course-item"><a href="cos104.html">COS 104</a></div>
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Orizon's Edu Hub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById("nav-menu");
+            navMenu.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
